@@ -1,0 +1,216 @@
+/**
+ * /* --------------------
+ *
+ * @format
+ */
+
+/* Custom Properties   */
+/* --------------------*/
+
+:root {
+  --darkest: #191716;
+  --eggplant: #522b47;
+  --magenta: #7b0828;
+  --rust: #af3800;
+  --sapphire: #066699;
+  --turqoise: #0d838b;
+  --mustard: #ffb400;
+  --pale: #93a8ac;
+  --light: #fffffa;
+}
+
+/* --------------------*/
+/* Fonts               */
+/* --------------------*/
+
+/* font-family: 'Coustard', serif;
+font-family: 'EB Garamond', serif;
+font-family: 'Eczar', serif; */
+
+/* --------------------*/
+/* Reset               */
+/* --------------------*/
+
+/* https://piccalil.li/blog/a-modern-css-rest/ */
+
+/* Box Sizing */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Default font size - 1em = 16px - 2.1rem = 21px */
+
+html {
+  font-size: 62.5%;
+}
+
+/* Reset margins */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+picture,
+figure {
+  margin: 0;
+}
+
+/* Set up the body */
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: "Zen Antique", serif;
+  font-size: 62.5%;
+}
+
+main {
+  font-size: 2rem;
+}
+
+/*make images easier to work with */
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --------------------*/
+/* Utility classes     */
+/* --------------------*/
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.container {
+  padding-inline: 2em; /*looking at inline access of container (left and right side, not top and bottom)*/
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* --------------------*/
+/* Nav                 */
+/* --------------------*/
+
+#initials {
+  font-family: "Eczar", serif;
+  font-weight: 700;
+  font-size: 3rem;
+  border: 5px solid black;
+  padding: 0.5em;
+  margin: 0.5em;
+  color: var(--light);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.initial-link {
+  color: inherit;
+}
+
+.logo {
+  position: fixed;
+}
+
+.animation {
+  animation-name: color-flow;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.rotate:hover {
+  animation: rotation 2s infinite;
+  color: inherit;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes color-flow {
+  0% {
+    background-color: var(--magenta);
+  }
+  20% {
+    background-color: var(--rust);
+  }
+  40% {
+    background-color: var(--mustard);
+  }
+  80% {
+    background-color: var(--sapphire);
+  }
+  100% {
+    background-color: var(--eggplant);
+  }
+}
+
+/* --------------------*/
+/* Footer              */
+/* --------------------*/
+
+footer {
+}
+
+footer {
+  width: 100%;
+  min-height: 8vh;
+  background-color: var(--darkest);
+  color: var(--light);
+  font-size: 2rem;
+  padding: 0.5em 0;
+  margin-top: 22.5rem;
+}
