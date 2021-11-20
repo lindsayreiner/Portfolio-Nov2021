@@ -152,7 +152,7 @@ body > footer {
   font-family: "Eczar", serif;
   font-weight: 700;
   font-size: 3rem;
-  border: 5px solid var(--darkest);
+  border: 5px solid var;
   padding: 0.5em;
   margin: 0.5em;
   color: var(--light);
