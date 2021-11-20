@@ -8,7 +8,7 @@
 /* --------------------*/
 
 :root {
-  --darkest: #191716;
+  --darkest: #270f21;
   --eggplant: #522b47;
   --magenta: #7b0828;
   --rust: #af3800;
@@ -45,6 +45,7 @@ font-family: 'Eczar', serif; */
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 /* Reset margins */
@@ -104,6 +105,13 @@ select {
   }
 }
 
+/* Sticky footer */
+
+body > footer {
+  position: sticky;
+  top: 100vh;
+}
+
 /* --------------------*/
 /* Utility classes     */
 /* --------------------*/
@@ -144,15 +152,17 @@ select {
   font-family: "Eczar", serif;
   font-weight: 700;
   font-size: 3rem;
-  border: 5px solid black;
+  border: 5px solid var(--darkest);
   padding: 0.5em;
   margin: 0.5em;
   color: var(--light);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.initial-link {
+.initial-link,
+.initial-link:hover {
   color: inherit;
+  text-decoration: none;
 }
 
 .logo {
