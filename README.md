@@ -2,7 +2,7 @@
 
 This will serve as my portfolio page for job seeking.
 
-Live link: 
+Live link: https://lindsayreiner.github.io/portfolio-update-Nov2021/
 
 ## Motivation
 
@@ -27,7 +27,7 @@ Live link:
 3. Flexbox navigation and footer.
 
 <br>
-<img src="assets/images/Full screenshot.png" width="400" height="800">
+<img src="" width="400" height="800">
 
 <br>
 <br>

@@ -183,7 +183,6 @@ body > footer {
   font-weight: 700;
   font-size: 3rem;
   text-align: center;
-  border: 5px solid var(--darkest);
   border-radius: 8px;
   padding: 0.5em;
   margin-left: .5rem;
@@ -246,7 +245,7 @@ body > footer {
 
 nav {
   font-size: 1.5rem;
-  background-color: var(--eggplant);
+  background-color: var(--darkest);
   padding: 3rem;
 }
 
