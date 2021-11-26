@@ -268,7 +268,7 @@ border: 3px double black;
 }
 
 button {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
   margin-top: 2rem;
@@ -283,9 +283,6 @@ button {
 /* --------------------*/
 
 #about {
-  margin-top: 10rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
   padding: 3rem;
   background: linear-gradient(
     321deg,
@@ -295,6 +292,8 @@ button {
   flex-direction: column;
   font-size: clamp(1.5rem, 7vmin, 2.5rem);
   border: groove 1em var(--pale-pink);
+  max-width: 90rem;
+  margin: 0 auto;
 }
 
 .opening-line:first-letter {
@@ -303,6 +302,26 @@ button {
 
 .opening-line:first-line {
   font-weight: bold;
+}
+
+.github {
+  width: 25%;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.linkedin {
+  width: 30%;
+}
+
+.social-li {
+  list-style: none;
+  text-decoration: none;
+  
+}
+.social-container {
+  
 }
 
 /* --------------------*/
@@ -330,8 +349,9 @@ button {
 .card,
 .card-body,
 .card-img {
-  margin-right: 2rem;
+  /* margin-right: 2rem; */
   border-radius: 8px;
+  margin: 0 auto;
 }
 .card:hover {
   transform: scale(1.1);
@@ -354,7 +374,7 @@ button {
 .list {
   text-decoration: none;
   list-style: none;
-  min-width: 80%;
+  
 }
 
 .contact-info {
@@ -369,10 +389,12 @@ button {
   );
   position: absolute;
   left: 100px;
+  top: 100px;
+  
 }
 
 #contact {
-  font-size: 3rem;  
+  font-size: clamp(2rem, 7vmin, 3rem);
 }
 
 
@@ -387,41 +409,35 @@ button {
   font-size: 2rem;
 }
 
-.github,
-.linkedin {
-  max-width: 15%;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 15%;
-}
 
 /* --------------------*/
 /* Footer Image        */
 /* --------------------*/
 
 .contact-img {
-  max-width: 60%;
+  max-width: 50%;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 5rem;
 }
 
 /* --------------------*/
-/* Footer Links        */
+/* Footer/Links        */
 /* --------------------*/
 
 
 footer {
   width: 100%;
   background-color: rgb(39, 15, 33, 0.8);
-  color: var(--light);
+  color: var(--darkest);
   padding: 0.5em 0;
 }
 
 .footer-links {
   text-decoration: none;
   list-style: none;
-  color: inherit;
+  color: var(--pale-pink);
   font-size: 3rem;
 }
 
@@ -431,8 +447,8 @@ footer {
   bottom: 20rem;
 }
 
-.li-three,
-.li-two {
+.li-two,
+.li-three {
   position: relative;
   bottom: 2rem;
 }
@@ -446,7 +462,7 @@ footer {
 }
 
 .footer-links:hover {
-color: inherit;
+color: var(--light);
 border-bottom: 5px solid var(--magenta);
 }
 
@@ -469,6 +485,22 @@ border-bottom: 5px solid var(--magenta);
     position: relative;
   }
 
+  .three-cards {
+    width: 100%;
+    margin: 0;
+  }
+
+  .me {
+    display: none;
+     }
+
+}
+
+@media screen and (max-width: 810px) {
+  .contact-info {
+    min-width: 70%;
+  }
+  
 }
 
 @media screen and (max-width: 1100px) {
@@ -482,13 +514,32 @@ border-bottom: 5px solid var(--magenta);
     margin-top: 5rem;
   }
 
+  .me {
+    display: none;
+     }
+
+     .nav-ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .navBtn {
+    border-radius: 8px;
+    width: 60vw;
+    margin-top: rem;
+    margin-right: auto;
+    }
+
+   
+
  
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1280px) {
 
   .me {
-    max-height: 25vh; 
+    max-height: 40vh; 
     border-radius: 50%;   
     align-self: center;
     margin-top: -100px;
@@ -496,13 +547,14 @@ border-bottom: 5px solid var(--magenta);
     margin-right: 5rem;
 
   }
- 
+
+  .card:hover {
+    transform:none;
+  }
+
+#about {
+  margin-top: 3rem;
 }
 
-@media screen and (max-width: 1000px) {
 
-  .me {
- display: none;
-  }
- 
 }
