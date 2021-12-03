@@ -4,6 +4,8 @@ This will serve as my portfolio page for job seeking.
 
 Live link: https://lindsayreiner.github.io/portfolio-update-Nov2021/
 
+<img src="public/images/portfolio-screenshot.png" alt="portfolio-screenshot">
+
 ## Motivation
 
 - I needed a website where all of my projects can be housed, and shared with potential employers.
