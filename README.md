@@ -2,7 +2,8 @@
 
 This will serve as my portfolio page for job seeking.
 
-Live link: https://lindsayreiner.github.io/portfolio-update-Nov2021/
+Live link: https://lindsayreiner.github.io/Portfolio-Nov2021/
+
 
 <img src="public/images/portfolio-screenshot.png" alt="portfolio-screenshot">
 
